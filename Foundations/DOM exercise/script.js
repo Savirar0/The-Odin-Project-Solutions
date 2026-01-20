@@ -16,6 +16,19 @@ blu.style.color="blue";
 container.appendChild(red);
 container.appendChild(blu);
 
+const container2 = document.createElement("div");
+container2.style.backgroundColor="pink";
+container2.style.borderColor="black";
+container2.style.borderStyle = "solid";
+container2.style.borderWidth = "5px";
+const content1 = document.createElement("h1");
+content1.textContent="I'm in a div";
+const content2 = document.createElement("p");
+content2.textContent="ME TOO!"
+container2.appendChild(content1);
+container2.appendChild(content2);
+container.appendChild(container2);
+
 
 
 
