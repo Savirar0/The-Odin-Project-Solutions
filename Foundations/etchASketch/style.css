@@ -6,9 +6,10 @@ body{
 .container{
     display: flex;
     justify-content:flex-start;
-    flex-wrap: wrap;
-    width: 960px;
-    height: 960px;
+    flex-direction: column;
+    /* flex-wrap: wrap;*/
+    width: 800px;
+    height: 800px; 
     
     position:relative;
 }
