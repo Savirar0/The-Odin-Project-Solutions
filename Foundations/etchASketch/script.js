@@ -31,7 +31,9 @@ button.addEventListener('click', () => {
         }
     };
 });
-
+function randomVal() {
+    return Math.floor(Math.random() * 256);
+}
 function makeDivs(n) {
     let twh = 700;
     myPopup.hide();
@@ -51,7 +53,10 @@ function makeDivs(n) {
             box.style.border="1px solid black";
             box.style.background = "white";
             box.addEventListener('mouseenter', () => {
-            box.style.background = "black";
+                const r = randomVal();
+                const g = randomVal();
+                const b = randomVal();
+                box.style.background = `rgb(${r},${g},${b})`;
             });
             mainBox.appendChild(box);
         }
