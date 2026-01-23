@@ -12,19 +12,28 @@ const myPopup = new Popup({
         </div>
     `,
 });
-
+const limitPopup = new Popup({
+    id: "Limit",
+    title: "Alert",
+    content: `Your input is over
+     the limit 100`,
+});
 button.addEventListener('click', () => {
     myPopup.show();
     const ch = document.querySelector("#confirmSize");
     const input = document.querySelector("#sizeInput");
     ch.onclick = () => {
-        const n = input.value; 
-        makeDivs(n);
+        if(input.value <101){
+            const n = input.value; 
+            makeDivs(n);
+        }else{
+            limitPopup.show();
+        }
     };
 });
 
 function makeDivs(n) {
-    let twh = 800;
+    let twh = 700;
     myPopup.hide();
     container.innerHTML = '';
     let defh = `${twh/n}px`;
@@ -39,12 +48,15 @@ function makeDivs(n) {
             const box = document.createElement("div");
             box.style.height = defh;
             box.style.width = defw;
-            box.style.border="1px solid white";
+            box.style.border="1px solid black";
+            box.style.background = "white";
+            box.addEventListener('mouseenter', () => {
             box.style.background = "black";
+            });
             mainBox.appendChild(box);
         }
     }
-
+    
     // for (let i = 0; i < n * n; i++) {
     //     const box = document.createElement("div");
     //     box.style.height = defh;

@@ -4,12 +4,13 @@ body{
     align-items: center;
 }
 .container{
+    margin-left: 52px;
     display: flex;
     justify-content:flex-start;
     flex-direction: column;
     /* flex-wrap: wrap;*/
-    width: 800px;
-    height: 800px; 
+    width: 960px;
+    height: 960px; 
     
     position:relative;
 }
