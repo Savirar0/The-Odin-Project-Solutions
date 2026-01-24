@@ -1,10 +1,22 @@
 body{
     align-items: center;
 }
-#box{
-    width: 80;
-    height: 80;
+.num{
+    width: 85px;
+    height: 85px;
     border: 1px solid black;
+}
+.zero{
+    width:170px;
+    height: 85px;
+
+}
+.zeros{
+    width: 255px;
+    height: 85px;
+    display: flex;
+    flex-direction: row;
+    
 }
 .cal{
     display: flex;
@@ -12,8 +24,8 @@ body{
     align-items: center;
 }
 .display{
-    width: 390;
-    height: 90;
+    width: 340px;
+    height: 85px;
     border: 1px solid black;
 }
 .buttons{
@@ -28,10 +40,23 @@ body{
 }
 .nums{
     width: 255px;
-    height: 400px;
+    height: 340px;
     display:flex;
-    /* justify-content: flex-start;*/
     flex-wrap: wrap;
     align-content: flex-start;
-    border: 1px solid black;
+    
+}
+
+.operators{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.plus{
+    width: 85px;
+    height: 170px;
+}
+.equals{
+    width: 85px;
+    height: 170px;
 }
