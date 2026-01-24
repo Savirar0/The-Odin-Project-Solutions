@@ -27,5 +27,11 @@ body{
     align-items: center;
 }
 .nums{
-
+    width: 255px;
+    height: 400px;
+    display:flex;
+    /* justify-content: flex-start;*/
+    flex-wrap: wrap;
+    align-content: flex-start;
+    border: 1px solid black;
 }
