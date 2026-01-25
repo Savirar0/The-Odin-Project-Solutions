@@ -48,11 +48,19 @@ body{
 }
 
 .operators{
+    height: 425px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-content: flex-start;
+
 }
-#add{
+.op{
+    width: 85px;
+    height: 85px;
+    border: 1px solid black;
+}
+.bigbtns{
     width: 85px;
     height: 170px;
 }
@@ -60,7 +68,7 @@ body{
     width: 85px;
     height: 170px;
 }
-#op{
+#del{
     width: 85px;
     height: 85px;
     border: 1px solid black;
