@@ -1,6 +1,10 @@
 body{
+    display: flex;
+    justify-content: center;
     align-items: center;
     background-color: rgb(159, 241, 127);
+    min-height: 100vh;
+    width: 100%;
 }
 .num{
     width: 85px;
