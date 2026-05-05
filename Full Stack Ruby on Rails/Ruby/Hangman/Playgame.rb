@@ -47,7 +47,6 @@ when 1
   p "You have #{chances} chances"
   word=word.split("")
   ans=Array.new(word.length,"-")
-  found=false
   temp=word.clone
   temp2=word.clone
   game.play(word,ans,temp,temp2,chances)
