@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 100vh;
+    background-color: rgb(252, 252, 252);
+    /* justify-content: center; */
+    align-items: center;
+    gap: 18.5vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 100vh;
+    background-color: rgb(177, 177, 177);
+}
+
+.iconnames {
+    display: flex;
+    flex-direction: row;
+    gap: 4vw;
+}
+
+.Diconnames {
+    display: flex;
+    flex-direction: row;
+    gap: 12%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
